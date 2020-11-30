@@ -8,7 +8,7 @@ pip install SpeechRecognition
 
 import speech_recognition as sr
 
-AUDIO_FILE = "9_2 lecture video.wav"
+AUDIO_FILE = "9_23 by me.wav"
 
 r = sr.Recognizer()
 with sr.AudioFile(AUDIO_FILE) as source:

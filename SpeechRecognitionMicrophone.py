@@ -19,6 +19,6 @@ with mic as source:
 
 # 구글 웹 음성 API로 인식하기 (하루에 제한 50회)
 try:
-    print(r.recognize_google(audio, language='en', show_all=True))
+    print(r.recognize_google(audio, language='en', show_all=False))
 except Exception as e:
     print(str)
