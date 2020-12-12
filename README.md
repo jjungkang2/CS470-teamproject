@@ -33,12 +33,12 @@ $ tar -xf bert-base-uncased.tar.gz
 * Python and Pakages : Python, nltk, shutil, difflib, selenium, shlex
 * Other Programs : ffmpeg, Chrome driver
 
-The requirements with Other Programs are in below link. 
+The requirements with Other Programs are in below link.   
 https://drive.google.com/file/d/1ygMqnPPBsBTiJar3WxOC-n2NyShIOq5N/view?usp=sharing  
-Please download this folder and use as workfolder.  
+Please download this folder and use as workfolder.
 
 ### how to use (What should you do before executing "total.py"
 First of all, PLEASE USE ABOVE LINKED FOLDER AS WORKFOLDER !  
-You need to cd to above folder. 
-If you not, it cannot find some path or programs. 
-Then, open TextToSignLang.py and modify two PATH variables(SIGN_PATH, DOWN_PATH) as your local environment. 
+You need to cd to above folder.   
+If you not, it cannot find some path or programs.   
+Then, open TextToSignLang.py and modify two PATH variables(SIGN_PATH, DOWN_PATH) as your local environment.
