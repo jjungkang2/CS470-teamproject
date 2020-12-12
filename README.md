@@ -1,5 +1,11 @@
 CS470-teamproject
 --------------------------------------------
+## Contents
+* Speech To Text
+* 혜진누나가 쓸 모델
+* DisfluencyRemover
+* Texts To a Signlanguage Video
+* 한 번에 실행시킬 "total.py"
 
 ## Speech to Text
 ### IBM Speech to Text API
