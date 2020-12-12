@@ -12,16 +12,12 @@ pip install --upgrade "ibm-watson>=4.7.1"
 You need to authenticate to the API by using IBM Cloud Identity and Access Management(IAM).
 You can easily create the key in [IAM authentication](https://cloud.ibm.com/docs/watson?topic=watson-about).   
 
-
 ### Requirements for DisfluencyRemover 
-* Python 3.6 or higher.
-* Cython 0.25.2 or any compatible version.
-* [PyTorch](http://pytorch.org/) 0.4.1, 1.0/1.1, or any compatible version.
-* [pytorch-pretrained-bert](https://github.com/huggingface/pytorch-pretrained-BERT) 0.4.0 or any compatible version
-
+* Python, Cython, PyTorch, pytorch-pretrained-bert
 
 ### Pretrained Models for DisfluencyRemover
-Download pretrained model and bert with following link and unzip at 'model' folder. The pretrained model's f-score=92.4%.
+Download pretrained model and bert with following link and unzip at `model` folder.  
+The pretrained model's f-score=92.4%.
 
 ```
 $ cd model
