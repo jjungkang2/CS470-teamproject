@@ -1,10 +1,6 @@
 CS470-teamproject
 --------------------------------------------
 
-## Requirements
-
-### Install packages  
-
 ## Speech to Text
 ### IBM Speech to Text API
 ```
