@@ -32,8 +32,11 @@ $ tar -xf bert-base-uncased.tar.gz
 ### Requirements for TextToSignLang
 * Python and Pakages : Python, nltk, shutil, difflib, selenium, shlex
 * Other Programs : ffmpeg, Chrome driver
+
 The requirements with Other Programs are in below link.
+
 https://drive.google.com/file/d/1ygMqnPPBsBTiJar3WxOC-n2NyShIOq5N/view?usp=sharing
+
 Please download this folder and use as workfolder.
 
 ### how to use (What should you do before executing "total.py"
