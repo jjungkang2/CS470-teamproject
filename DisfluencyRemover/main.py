@@ -11,6 +11,8 @@ import random
 import nkutil
 import parse_nk
 
+from nltk.tokenize import sent_tokenize, word_tokenize
+
 def torch_load(load_path):
     if parse_nk.use_cuda:
         return torch.load(load_path)
@@ -74,8 +76,8 @@ def run_parse(args):
     parser = parse_nk.NKChartParser.from_spec(info['spec'], info['state_dict'])
 
     with open(args.input_path, encoding="UTF8") as input_file:
-        sentences = input_file.readlines()
-    sentences = [sentence.split() for sentence in sentences]
+        sentences = input_file.readline().replace("’", "'")
+    sentences = [word_tokenize(sent) for sent in sent_tokenize(sentences)]
 
     # Tags are not available when parsing from raw text, so use a dummy tag
     if 'UNK' in parser.tag_vocab.indices:
@@ -92,7 +94,6 @@ def run_parse(args):
         del _
         if args.output_path == '-':
             for p in predicted:
-                
                 print(p.convert().linearize())
                 print(p.convert().linearize_clear())
                 print()
@@ -100,9 +101,9 @@ def run_parse(args):
             all_predicted.extend([p.convert() for p in predicted])
 
     if args.output_path != '-':
-        with open(args.output_path, 'w') as output_file:
+        with open(args.output_path, 'w', encoding='UTF8') as output_file:
             for tree in all_predicted:
-                output_file.write("{}\n".format(tree.linearize()))
+                output_file.write("{}\n".format(tree.linearize_clear()))
 #%%
 
 def main():
@@ -111,10 +112,9 @@ def main():
 
     hparams = make_hparams()
     parser.set_defaults(callback=run_parse)
-    parser.add_argument("--model-path-base", default="best_models/swbd_fisher_bert_Edev.0.9078.pt")
-    parser.add_argument("--input-path", default="best_models/raw_sentences.txt")
-    # parser.add_argument("--output-path", default="best_models/parsed_sentences.txt")    
-    parser.add_argument("--output-path", default="-")
+    parser.add_argument("--model-path-base", default="model/swbd_fisher_bert_Edev.0.9078.pt")
+    parser.add_argument("--input-path", default="result/raw_sentences.txt")
+    parser.add_argument("--output-path", default="result/parsed_sentences.txt")    
     parser.add_argument("--eval-batch-size", type=int, default=100)
 
     args = parser.parse_args()

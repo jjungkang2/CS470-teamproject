@@ -1,1 +1,0 @@
-(S (NP (UNK you)) (VP (UNK should) (VP (UNK look) (PP (UNK at) (NP (UNK the) (EDITED (UNK inner) (UNK maximize)) (PRN (S (NP (UNK i)) (VP (UNK mean)))) (UNK inner) (UNK optimization))))))

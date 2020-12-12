@@ -1,5 +1,6 @@
 import collections.abc
 import gzip
+import string
 
 class TreebankNode(object):
     pass
@@ -24,7 +25,7 @@ class InternalTreebankNode(TreebankNode):
         else:
             child_sent = [child.linearize_clear() for child in self.children]
             child_sent = list(filter(lambda sent: len(sent)>0, child_sent))
-            return " ".join(child_sent)
+            return "".join([" "+i if not i.startswith("'") and i not in string.punctuation else i for i in child_sent]).strip()
 
     def leaves(self):
         for child in self.children:
