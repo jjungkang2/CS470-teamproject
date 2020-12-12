@@ -16,7 +16,7 @@ You can easily create the key in [IAM authentication](https://cloud.ibm.com/docs
 * Python, Cython, PyTorch, pytorch-pretrained-bert
 
 ### Pretrained Models for DisfluencyRemover
-Download pretrained model and bert with following link and unzip at `model` folder.  
+Download pretrained model and bert with following link and unzip at `DisfluencyRemover\model` folder.  
 The pretrained model's f-score=92.4%.
 
 ```
