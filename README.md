@@ -54,7 +54,7 @@ The requirements(some files and Other Programs) are in the 'Text_to_sign_languag
 Please download this folder and use as workfolder.
 
 ### how to use
-First of all, PLEASE USE ABOVE LINKED FOLDER AS WORKFOLDER !  
+First of all, PLEASE USE ABOVE "Text_to_sign_language" FOLDER AS WORKFOLDER !  
 You need to cd to above folder.   
 If you not, it cannot find some path or programs.   
 Then, open TextToSignLang.py and modify two PATH variables(SIGN_PATH, DOWN_PATH) as your local environment.
