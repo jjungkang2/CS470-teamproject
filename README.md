@@ -20,11 +20,12 @@ You can easily create the key in [IAM authentication](https://cloud.ibm.com/docs
 ### Model Training
 You can train the model from scratch, with dataset construction and model building.
 Training code is provided in PunctuationRestoration/punctuator_training.ipynb file, and can be run in google colab.
+For training, you need to download processed dataset from ~.ipynb file.
+You can get the dataset by running above file in google colab.
 Detailed instructions are provided in the file.
 
 ### Model Applying
 You can apply the model with our pre-made model, datasets, dictionaries and matrices.
-
 
 ## DisfluencyRemover
 ### Requirements for DisfluencyRemover 
@@ -67,4 +68,16 @@ However, we didn't prepare translation model.
 You need to translate processed english text(output of DisfluencyRemover) and use it or you can put the translated text as text_input_TTS.txt in your GDrive.
 
 ## Main.py
-### down link : 
+The full process of this project can be executed by main.py file.
+After cloning this github file, you need to set configurations to run.
+Please set your work directory as 'CS470-teamproject'.
+Required packages what you need to install are below.
+* Cython
+* easydict
+* ffmpy
+* ibm-watson
+* nltk 
+* numpy
+* pytorch-pretrained-bert
+* torch
+* transliterate
