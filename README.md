@@ -38,7 +38,6 @@ The pretrained model's f-score=92.4%.
 $ cd model
 $ wget https://github.com/pariajm/joint-disfluency-detection-and-parsing/releases/download/naacl2019/swbd_fisher_bert_Edev.0.9078.pt
 $ wget https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased.tar.gz
-$ wget https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt
 $ tar -xf bert-base-uncased.tar.gz
 ```
 
