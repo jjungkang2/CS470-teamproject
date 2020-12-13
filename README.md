@@ -2,7 +2,7 @@ CS470-teamproject
 --------------------------------------------
 ## Contents
 * Speech To Text
-* 혜진누나가 쓸 모델
+* Punctuation Restoration
 * DisfluencyRemover
 * Texts To a Signlanguage Video
 * 한 번에 실행시킬 "total.py"
@@ -14,6 +14,16 @@ pip install --upgrade "ibm-watson>=4.7.1"
 ```
 You need to authenticate to the API by using IBM Cloud Identity and Access Management(IAM).
 You can easily create the key in [IAM authentication](https://cloud.ibm.com/docs/watson?topic=watson-about).   
+
+## Punctuator Restoration
+### Model Training
+You can train the model from scratch, with dataset construction and model building.
+Training code is provided in .ipynb file, and can be run in google colab.
+Detailed instructions are provided in the .ipynb file.
+
+### Model Applying
+You can apply the model with our pre-made model, datasets, dictionaries and matrices.
+
 
 ## DisfluencyRemover
 ### Requirements for DisfluencyRemover 
