@@ -43,6 +43,9 @@ $ tar -xf bert-base-uncased.tar.gz
 ```
 
 ## Texts To a Signlanguage Video
+If main.py works well, you don't need to execute this part separately.    
+However, if not, you need to read below comments and execute TextToSignLang.
+
 ### Requirements for TextToSignLang
 * Python and Pakages : Python, nltk, shutil, difflib, selenium, shlex
 * Other Programs : ffmpeg, Chrome driver
@@ -81,3 +84,7 @@ Note that you need to set configurations to run. Required packages what you need
 * pytorch-pretrained-bert
 * torch
 * transliterate
+
+### Causion
+main.py could make error because of difference of ffmpeg version(according to your OS) or cannot set up environment path.   
+If these kinds of errors occur, you need to read "Texts To a Signlanguage Video" above and execute this part separately.
