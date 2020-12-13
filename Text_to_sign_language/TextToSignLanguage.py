@@ -209,7 +209,7 @@ def convert_to_video():
     ## MAIN STARTS
     ## text 받는 부분부터 for loop 으로 txt 파일을 읽어오면 전체 텍스트에 대해 실행 가능.
     # Get the text which is going to become ASL
-    # f = open(SIGN_PATH + "\\text_to_Sign.txt", 'r')
+    # f = open(SIGN_PATH + "\\disfluency_remover_result.txt", 'r')
     text_path = os.pardir + '/Results/disfluency_remover_result.txt'
     print("text_path")
     print(text_path)
