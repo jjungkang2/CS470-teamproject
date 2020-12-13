@@ -88,6 +88,6 @@ Note that you need to set configurations to run. Required packages what you need
 * torch
 * transliterate
 
-### Causion
+### Caution
 main.py could make error because of difference of ffmpeg version(according to your OS) or cannot set up environment path.   
 If these kinds of errors occur, you need to read "Texts To a Signlanguage Video" above and execute this part separately.
