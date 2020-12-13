@@ -69,9 +69,9 @@ You need to translate processed english text(output of DisfluencyRemover) and us
 
 ## Main.py
 The process from applying speech to text to disfluency detection can be executed by main.py file.
-After cloning this github file, you need to set configurations to run.
-Please set your work directory as 'CS470-teamproject'.
-Required packages what you need to install are below.
+Please set your work directory as 'CS470-teamproject'. 
+Download some files mentioned earlier such as pre-trained model for disfluency detection and programs for generating sign language video, etc. and add to the work directory.
+Note that you need to set configurations to run. Required packages what you need to install are below.
 * Cython
 * easydict
 * ffmpy
