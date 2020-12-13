@@ -20,7 +20,7 @@ You can easily create the key in [IAM authentication](https://cloud.ibm.com/docs
 ### Model Training
 You can train the model from scratch, with dataset construction and model building.
 Training code is provided in PunctuationRestoration/punctuator_training.ipynb file, and can be run in google colab.
-For training, you need to download processed dataset from ~.ipynb file.
+For training, you need to download processed dataset from text_processing.py file.
 You can get the dataset by running above file in google colab.
 Detailed instructions are provided in the file.
 
