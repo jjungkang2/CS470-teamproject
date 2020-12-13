@@ -50,7 +50,7 @@ However, if not, you need to read below comments and execute TextToSignLang.
 * Python and Pakages : Python, nltk, shutil, difflib, selenium, shlex
 * Other Programs : ffmpeg, Chrome driver
 
-The requirements with Other Programs are in the folder at below link.   
+The requirements(some files and Other Programs) are in the folder at below link.   
 https://drive.google.com/file/d/1ygMqnPPBsBTiJar3WxOC-n2NyShIOq5N/view?usp=sharing  
 Please download this folder and use as workfolder.
 
