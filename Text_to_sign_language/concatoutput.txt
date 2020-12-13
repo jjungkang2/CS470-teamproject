@@ -1,0 +1,2 @@
+file 'C:\Users\고준원\Downloads\TextToSignLang\outputs.mp4'
+file 'C:\Users\고준원\Downloads\TextToSignLang\output.mp4'

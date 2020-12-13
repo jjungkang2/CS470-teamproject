@@ -5,6 +5,7 @@ import numpy as np
 import torch
 import torch.nn as nn
 import torch.nn.init as init
+from pytorch_pretrained_bert import BertTokenizer, BertModel
 
 use_cuda = False
 if use_cuda:
@@ -15,10 +16,15 @@ else:
 
 import pyximport
 pyximport.install(setup_args={"include_dirs": np.get_include()})
-import chart_helper
-import nkutil
 
-import trees
+from DisfluencyRemover import nkutil
+from DisfluencyRemover import chart_helper
+from DisfluencyRemover import trees
+
+# import DisfluencyRemover.chart_helper
+# import DisfluencyRemover.nkutil
+#
+# import DisfluencyRemover.trees
 
 START = "<START>"
 STOP = "<STOP>"
@@ -477,7 +483,7 @@ class MultiLevelEmbedding(nn.Module):
 # %%
 def get_bert(bert_model, bert_do_lower_case):
     # Avoid a hard dependency on BERT by only importing it if it's being used
-    from pytorch_pretrained_bert import BertTokenizer, BertModel
+
     if bert_model.endswith('.tar.gz'):
         tokenizer = BertTokenizer.from_pretrained(bert_model.replace('.tar.gz', '-vocab.txt'), do_lower_case=bert_do_lower_case)
     else:

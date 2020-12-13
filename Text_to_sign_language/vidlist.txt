@@ -1,0 +1,3 @@
+file 'C:\Users\고준원\Downloads\TextToSignLang\apple.mp4'
+file 'C:\Users\고준원\Downloads\TextToSignLang\red.mp4'
+file 'C:\Users\고준원\Downloads\TextToSignLang\fruit.mp4'
