@@ -20,7 +20,8 @@ You can easily create the key in [IAM authentication](https://cloud.ibm.com/docs
 ### Model Training
 You can train the model from scratch, with dataset construction and model building.
 Training code is provided in PunctuationRestoration/punctuator_training.ipynb file, and can be run in google colab.
-For training, you need to download processed dataset from text_processing.py file. You can get the dataset by running this file.
+For training, you need to download processed dataset from ~.ipynb file.
+You can get the dataset by running above file in google colab.
 Detailed instructions are provided in the file.
 
 ### Model Applying
@@ -50,13 +51,17 @@ However, if not, you need to read below comments and execute TextToSignLang.
 * Other Programs : ffmpeg, Chrome driver
 
 The requirements(some files and Other Programs) are in the 'Text_to_sign_language' folder.   
+However, please download new 'Text_to_sign_language' folder from below link just in case.   
+https://drive.google.com/file/d/1DLSQsq1NP_WhM7PP3h-vpkCZvRdCLKfT/view?usp=sharing
 Please download this folder and use as workfolder.
 
 ### how to use
 First of all, PLEASE USE ABOVE "Text_to_sign_language" FOLDER AS WORKFOLDER !  
 You need to cd to above folder.   
 If you not, it cannot find some path or programs.   
-Then, open TextToSignLang.py and modify two PATH variables(SIGN_PATH, DOWN_PATH) as your local environment.
+Then, open TextToSignLang.py and modify two PATH variables(SIGN_PATH, DOWN_PATH) as your local environment.   
+If you downloaded new 'Text_to_sign_language' folder from link, you need to move 'disfluency_remover_result.txt' to this folder from 'Results' folder.    
+It is because new 'Text_to_sign_language' folder has some changes in path variable.
 
 ## Limiations
 ### Requirements for Limitation-continuous alphabet pictures
