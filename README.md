@@ -52,7 +52,7 @@ However, if not, you need to read below comments and execute TextToSignLang.
 
 The requirements(some files and Other Programs) are in the 'Text_to_sign_language' folder.   
 However, please download new 'Text_to_sign_language' folder from below link just in case.   
-https://drive.google.com/file/d/1DLSQsq1NP_WhM7PP3h-vpkCZvRdCLKfT/view?usp=sharing
+https://drive.google.com/file/d/1DLSQsq1NP_WhM7PP3h-vpkCZvRdCLKfT/view?usp=sharing    
 Please download this folder and use as workfolder.
 
 ### how to use
