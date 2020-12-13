@@ -20,11 +20,12 @@ You can easily create the key in [IAM authentication](https://cloud.ibm.com/docs
 ### Model Training
 You can train the model from scratch, with dataset construction and model building.
 Training code is provided in PunctuationRestoration/punctuator_training.ipynb file, and can be run in google colab.
+For training, you need to download processed dataset from ~.ipynb file.
+You can get the dataset by running above file in google colab.
 Detailed instructions are provided in the file.
 
 ### Model Applying
 You can apply the model with our pre-made model, datasets, dictionaries and matrices.
-
 
 ## DisfluencyRemover
 ### Requirements for DisfluencyRemover 
@@ -42,11 +43,14 @@ $ tar -xf bert-base-uncased.tar.gz
 ```
 
 ## Texts To a Signlanguage Video
+If main.py works well, you don't need to execute this part separately.    
+However, if not, you need to read below comments and execute TextToSignLang.
+
 ### Requirements for TextToSignLang
 * Python and Pakages : Python, nltk, shutil, difflib, selenium, shlex
 * Other Programs : ffmpeg, Chrome driver
 
-The requirements with Other Programs are in the folder at below link.   
+The requirements(some files and Other Programs) are in the folder at below link.   
 https://drive.google.com/file/d/1ygMqnPPBsBTiJar3WxOC-n2NyShIOq5N/view?usp=sharing  
 Please download this folder and use as workfolder.
 
@@ -67,4 +71,20 @@ However, we didn't prepare translation model.
 You need to translate processed english text(output of DisfluencyRemover) and use it or you can put the translated text as text_input_TTS.txt in your GDrive.
 
 ## Main.py
-### down link : 
+The process from applying speech to text to disfluency detection can be executed by main.py file.
+Please set your work directory as 'CS470-teamproject'. 
+Download some files mentioned earlier such as pre-trained model for disfluency detection and programs for generating sign language video, etc. and add to the work directory.
+Note that you need to set configurations to run. Required packages what you need to install are below.
+* Cython
+* easydict
+* ffmpy
+* ibm-watson
+* nltk 
+* numpy
+* pytorch-pretrained-bert
+* torch
+* transliterate
+
+### Causion
+main.py could make error because of difference of ffmpeg version(according to your OS) or cannot set up environment path.   
+If these kinds of errors occur, you need to read "Texts To a Signlanguage Video" above and execute this part separately.

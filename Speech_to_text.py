@@ -25,9 +25,7 @@ class MyRecognizeCallback(RecognizeCallback):
         print('Inactivity timeout: {}'.format(error))
 
 def speech_to_text(file_path):
-    # fixme: remove key for security
-    # authenticator = IAMAuthenticator('{Your key}')
-    authenticator = IAMAuthenticator('PB3kuAttBgiUuoZrdv8ZbKL13j4t7-7wl99VyB5JNUn3')
+    authenticator = IAMAuthenticator('{Your key}')
     
     speech_to_text = SpeechToTextV1(
         authenticator=authenticator
