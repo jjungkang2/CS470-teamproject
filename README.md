@@ -6,6 +6,7 @@ CS470-teamproject
 * DisfluencyRemover
 * Texts To a Signlanguage Video
 * Limiations
+* Main.py
 
 ## Speech to Text
 ### IBM Speech to Text API
@@ -64,3 +65,6 @@ https://drive.google.com/file/d/1pIdbnEjXeQqiXmrhwd6WLsKwi1l3DuJp/view?usp=shari
 You don't need to prepare something since they are Colab file.  
 However, we didn't prepare translation model. 
 You need to translate processed english text(output of DisfluencyRemover) and use it or you can put the translated text as text_input_TTS.txt in your GDrive.
+
+## Main.py
+### down link : 
