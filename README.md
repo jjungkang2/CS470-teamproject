@@ -61,7 +61,7 @@ However, we didn't prepare translation model.
 You need to translate processed english text(output of DisfluencyRemover) and use it or you can put the translated text as text_input_TTS.txt in your GDrive.
 
 ## Total.py
-### how to use (What should you do before executing "total.py"
+### how to use (What should you do before executing "total.py")
 First of all, PLEASE USE ABOVE LINKED FOLDER AS WORKFOLDER !  
 You need to cd to above folder.   
 If you not, it cannot find some path or programs.   
