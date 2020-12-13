@@ -18,8 +18,8 @@ You can easily create the key in [IAM authentication](https://cloud.ibm.com/docs
 ## Punctuator Restoration
 ### Model Training
 You can train the model from scratch, with dataset construction and model building.
-Training code is provided in .ipynb file, and can be run in google colab.
-Detailed instructions are provided in the .ipynb file.
+Training code is provided in PunctuationRestoration/punctuator_training.ipynb file, and can be run in google colab.
+Detailed instructions are provided in the file.
 
 ### Model Applying
 You can apply the model with our pre-made model, datasets, dictionaries and matrices.
