@@ -5,6 +5,7 @@ CS470-teamproject
 * Punctuation Restoration
 * DisfluencyRemover
 * Texts To a Signlanguage Video
+* Limiations
 * 한 번에 실행시킬 "total.py"
 
 ## Speech to Text
@@ -45,10 +46,21 @@ $ tar -xf bert-base-uncased.tar.gz
 * Python and Pakages : Python, nltk, shutil, difflib, selenium, shlex
 * Other Programs : ffmpeg, Chrome driver
 
-The requirements with Other Programs are in below link.   
+The requirements with Other Programs are in the folder at below link.   
 https://drive.google.com/file/d/1ygMqnPPBsBTiJar3WxOC-n2NyShIOq5N/view?usp=sharing  
 Please download this folder and use as workfolder.
 
+## Limiations
+### Requirements for Limitation-continuous alphabet pictures
+You need to get the alphabet picture database from below link   
+https://drive.google.com/file/d/1pIdbnEjXeQqiXmrhwd6WLsKwi1l3DuJp/view?usp=sharing  
+
+### Requirements for Limitaiton-Korean TTS
+You don't need to prepare something since they are Colab file.  
+However, we didn't prepare translation model. 
+You need to translate processed english text(output of DisfluencyRemover) and use it or you can put the translated text as text_input_TTS.txt in your GDrive.
+
+## Total.py
 ### how to use (What should you do before executing "total.py"
 First of all, PLEASE USE ABOVE LINKED FOLDER AS WORKFOLDER !  
 You need to cd to above folder.   
