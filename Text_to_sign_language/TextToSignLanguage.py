@@ -17,10 +17,10 @@ import os
 
 
 # CONSTANTS     
-# SIGN_PATH = "C:\\Users\\고준원\\Downloads\\TextToSignLang" ## Your local work folder
-SIGN_PATH = os.getcwd()
-# DOWN_PATH = "C:\\Users\\고준원\\Downloads" ## Your local downloads folder
-DOWN_PATH = os.pardir + '/Results'
+SIGN_PATH = "C:\\Users\\고준원\\Downloads\\Text_to_sign_language" ## Your local work folder
+# SIGN_PATH = os.getcwd()
+DOWN_PATH = "C:\\Users\\고준원\\Downloads" ## Your local downloads folder
+# DOWN_PATH = os.pardir + '/Results'
 
 DOWNLOAD_WAIT = 7
 SIMILIARITY_RATIO = 0.9
