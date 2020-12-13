@@ -26,7 +26,7 @@ def main():
     print("-----Disfluency Remover Execution Completed-----")
     
     # Generation of sign language video
-    os.chdir(os.pardir + 'Text_to_sign_language')
+    os.chdir(os.pardir + '/Text_to_sign_language')
     convert_to_video()
     print("-----Sign Language Video Generation Completed-----")
 
