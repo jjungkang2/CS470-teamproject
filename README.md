@@ -50,7 +50,7 @@ However, if not, you need to read below comments and execute TextToSignLang.
 * Python and Pakages : Python, nltk, shutil, difflib, selenium, shlex
 * Other Programs : ffmpeg, Chrome driver
 
-The requirements(some files and Other Programs) are in the 'text_to_sign_lang' folder.   
+The requirements(some files and Other Programs) are in the 'Text_to_sign_language' folder.   
 Please download this folder and use as workfolder.
 
 ### how to use
@@ -61,7 +61,7 @@ Then, open TextToSignLang.py and modify two PATH variables(SIGN_PATH, DOWN_PATH)
 
 ## Limiations
 ### Requirements for Limitation-continuous alphabet pictures
-You need to get the alphabet picture database from below link   
+You need to get the alphabet picture database from below link.   
 https://drive.google.com/file/d/1pIdbnEjXeQqiXmrhwd6WLsKwi1l3DuJp/view?usp=sharing  
 
 ### Requirements for Limitaiton-Korean TTS
