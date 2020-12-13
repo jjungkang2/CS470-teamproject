@@ -4,6 +4,8 @@ from ibm_watson.websocket import RecognizeCallback, AudioSource
 
 from nltk.tokenize import TreebankWordTokenizer
 
+import os
+
 class MyRecognizeCallback(RecognizeCallback):
     transcript = ""
 
@@ -52,6 +54,6 @@ def tokenize(transcript):
     return words
 
 def make_input_for_model(file_path):
-    transcript = speech_to_text(audio_file_path)
+    transcript = speech_to_text(file_path)
     result = tokenize(transcript)
     return result

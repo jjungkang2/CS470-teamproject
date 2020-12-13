@@ -1,15 +1,10 @@
 import argparse
-import itertools
 import os.path
-import sys
 import torch
 import torch.optim.lr_scheduler
 
-import numpy as np
-import random
-
-import nkutil
-import parse_nk
+from DisfluencyRemover import nkutil
+from DisfluencyRemover import parse_nk
 
 from nltk.tokenize import sent_tokenize, word_tokenize
 
@@ -106,20 +101,16 @@ def run_parse(args):
                 output_file.write("{}\n".format(tree.linearize_clear()))
 #%%
 
-def main():
+def execute_disfluency_remover():
     parser = argparse.ArgumentParser()
     subparsers = parser.add_subparsers()
 
     hparams = make_hparams()
     parser.set_defaults(callback=run_parse)
-    parser.add_argument("--model-path-base", default="model/swbd_fisher_bert_Edev.0.9078.pt")
-    parser.add_argument("--input-path", default="result/raw_sentences.txt")
-    parser.add_argument("--output-path", default="result/parsed_sentences.txt")    
+    parser.add_argument("--model-path-base", default=os.getcwd()+'/model/swbd_fisher_bert_Edev.0.9078.pt')
+    parser.add_argument("--input-path", default=os.pardir+'/Results/punctuator_result.txt')
+    parser.add_argument("--output-path", default=os.pardir + '/Results/disfluency_remover_result.txt')
     parser.add_argument("--eval-batch-size", type=int, default=100)
 
     args = parser.parse_args()
     args.callback(args)
-
-# %%
-if __name__ == "__main__":
-    main()
